@@ -57,7 +57,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       hash: true,
-      filename: './index.html' //relative to root of the application
+      template: './index.html',
+      filename: './index.html'
     })
   ],
   devtool: '#eval-source-map'
